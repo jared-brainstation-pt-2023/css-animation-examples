@@ -1,0 +1,64 @@
+<html>
+    <div id="linear-car">
+        <p>Linear Car</p>
+        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/14054/huracan-evo-exterior-right-side-view.jpeg?isig=0" width=100 alt="">
+    </div>
+    <div id="ease-car">
+        <p>Ease Car</p>
+        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/14054/huracan-evo-exterior-right-side-view.jpeg?isig=0" width=100 alt="">
+    </div>
+    <div id="ease-in-car">
+        <p>Ease In Car</p>
+        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/14054/huracan-evo-exterior-right-side-view.jpeg?isig=0" width=100 alt="">
+    </div>
+    <div id="ease-out-car">
+        <p>Ease Out Car</p>
+        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/14054/huracan-evo-exterior-right-side-view.jpeg?isig=0" width=100 alt="">
+    </div>
+    <div id="ease-in-out-car">
+        <p>Ease In-n-Out Car</p>
+        <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/14054/huracan-evo-exterior-right-side-view.jpeg?isig=0" width=100 alt="">
+    </div>
+</html>
+<style>
+    /*
+        Setting animation-fill-mode to forwards makes sure the animation
+        doesn't reset back to it's original position
+       animation-fill-mode: forwards; 
+    */
+    p {
+        font-size: 12px;
+    }
+    @keyframes move-car {
+        0% { transform: translateX(0px);}
+        25% { transform: translateX(50px);}
+        50% { transform: translateX(100px);}
+        75% { transform: translateX(150px);}
+        100% { transform: translateX(200px);}
+    }
+
+    #linear-car {
+        animation: move-car 7.5s linear;
+        animation-fill-mode: forwards;
+    }
+
+    #ease-car {
+        animation: move-car 7.5s ease;
+        animation-fill-mode: forwards;
+    }
+
+    #ease-in-car {
+        animation: move-car 7.5s ease-in;
+        animation-fill-mode: forwards;
+    }
+
+    #ease-out-car {
+        animation: move-car 7.5s ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    #ease-in-out-car {
+        animation: move-car 7.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+</style>

@@ -1,0 +1,19 @@
+<html>
+    <button class="btn">Animation Button</button>
+</html>
+<style>
+    @keyframes scale-back {
+        0% { transform: scale(1,1);}
+        25% { transform: scale(0,0);}
+        50% { transform: scale(1,1)}
+        75% { transform: scale(2,2)}
+        100% {transform: scale(1,1);}
+    }
+
+    .btn {
+        margin: 100px;
+        background-color: aqua;
+        border: 1px solid aqua;
+        animation: scale-back 4s linear;
+    }
+</style>
